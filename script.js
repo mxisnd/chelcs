@@ -91,7 +91,7 @@ function copyTextDisc(event) {
         link.innerText = "Copied!";
         
         setTimeout(() => {
-            link.innerText = "discord";
+            link.innerText = "Discord";
         }, 2000);
     });
 }
@@ -106,7 +106,22 @@ function copyTextTele(event) {
         link.innerText = "Copied!";
         
         setTimeout(() => {
-            link.innerText = "telegram";
+            link.innerText = "Telegram";
+        }, 2000);
+    });
+}
+
+// Copy Text (Email)
+function copyTextEmail(event) {
+    event.preventDefault();
+    const link = document.getElementById("emailLink");
+    const text = document.getElementById("textToCopyEmail").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        link.innerText = "Copied!";
+        
+        setTimeout(() => {
+            link.innerText = "Email";
         }, 2000);
     });
 }

@@ -28,13 +28,21 @@
             </div>
         </div>
 
+        <!-- Gif -->
+
+        <div class = "gif-header">
+            <img class = "gif-top" src = "assets/RatsAndRoombas_Gif.gif">
+        </div>
+
         <!-- Project -->
 
         <div class = "project" id = "project">
-            <img id = "project-photo" src = "assets/Rats and Roombas.png" width = "850" height = "500">
-            <h1>Rats and Roombas</h1>
+            <h1>Rats And Roombas</h1>
+            <div class = "project-video">
+                <video autoplay loop controls id = "project-photo" src = "assets/AGS_Trailer_V2.mp4" width = "1050" height = "590">
+            </div>
             <div class = "project-info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum ipsam possimus voluptatem vero placeat earum pariatur temporibus sequi saepe aperiam, ullam delectus esse ut voluptatum porro ab praesentium voluptatibus id cum. Aspernatur odio, vel laboriosam laudantium, dolorem laborum, expedita beatae consectetur commodi accusantium quaerat maiores repellendus repellat nam fugit!</p>
+                <p>Game Trailer</p>
             </div>
         </div>
 
@@ -53,53 +61,66 @@
                 <h1>Role</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum ipsam possimus voluptatem vero placeat earum pariatur temporibus sequi saepe aperiam, ullam delectus esse ut voluptatum porro ab praesentium voluptatibus id cum. Aspernatur odio, vel laboriosam laudantium, dolorem laborum, expedita beatae consectetur commodi accusantium quaerat maiores repellendus repellat nam fugit!</p>
             </div>
-            <img id = "project-info-2" src = "assets/Rats and Roombas.png" width = "600" height = "350">
+            <img id = "project-info-2" src = "assets/Elementra.png" width = "600" height = "350">
         </div>
 
         <div class = "gifs" id = "clips">
             <h3><span>Clips</span></h3>
             <p class= "hover-text">Hover over the gifs for more details.</p>
             <div class = "column-container">
-                <div class = "flip-container">
-                    <div class = "flipper">
-                        <div class = "column" id = "gif1-front"></div>
-                        <div class = "column column-back" id = "gif1-back">
-                            <div class = "stats">
+
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="column crop-container" id="gif1-front">
+                            <img src="assets/Elementra_Gif1.gif" alt="Front Side GIF">
+                        </div>
+                        <div class="column column-back" id="gif1-back">
+                            <div class="stats">
                                 <p>abc</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class = "flip-container">
-                    <div class = "flipper">
-                        <div class = "column" id = "gif2-front"></div>
-                        <div class = "column column-back" id = "gif2-back">
-                            <div class = "stats">
+
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="column crop-container" id="gif1-front">
+                            <img src="assets/Elementra_Gif2.gif" alt="Front Side GIF">
+                        </div>
+                        <div class="column column-back" id="gif1-back">
+                            <div class="stats">
                                 <p>abc</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class = "flip-container">
-                    <div class = "flipper">
-                        <div class = "column" id = "gif3-front"></div>
-                        <div class = "column column-back" id = "gif3-back">
-                            <div class = "stats">
+
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="column crop-container" id="gif1-front">
+                            <img src="assets/Elementra_Gif3.gif" alt="Front Side GIF">
+                        </div>
+                        <div class="column column-back" id="gif1-back">
+                            <div class="stats">
                                 <p>abc</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class = "flip-container">
-                    <div class = "flipper">
-                        <div class = "column" id = "gif4-front"></div>
-                        <div class = "column column-back" id = "gif4-back">
-                            <div class = "stats">
+
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="column crop-container" id="gif1-front">
+                            <img src="assets/Elementra_Gif4.gif" alt="Front Side GIF">
+                        </div>
+                        <div class="column column-back" id="gif1-back">
+                            <div class="stats">
                                 <p>abc</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -113,7 +134,7 @@
 
         <!-- Footer -->
 
-        <div class = "footer-container" id = "contact">
+        <div class = "footer-container">
             <div class="footer-heading footer-1">
                 <h2>chelc.s</h2>
                     <a href="#">Home</a>
@@ -124,15 +145,15 @@
 
                     <a href="https://www.linkedin.com/in/chelsea-diane-paquibot/">LinkedIn</a>
 
-                    <a href="mailto:chelsea.d.paq@gmail.com">Email Me</a>
-
+                    <a href="#" id = "emailLink" onclick = "copyTextEmail(event)">Email</a>
+                    <p id = "textToCopyEmail" style = "display: none;">chelsea.d.paq@gmail.com</p>
+                    
                     <a href="#" id = "discordLink" onclick = "copyTextDisc(event)">Discord</a>
                     <p id = "textToCopyDisc" style = "display: none;">mxisnd</p>
 
                     <a href="#" id = "teleLink" onclick = "copyTextTele(event)">Telegram</a>
                     <p id = "textToCopyTele" style = "display: none;">mxisnd</p>
                 </div>
-            </div>
-         </div>
+        </div>
     </body>
 </html>

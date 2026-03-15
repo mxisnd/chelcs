@@ -284,7 +284,7 @@ body {
     transition: 0.3s ease-out;
 }
 
-/* Projects*/
+/* Projects */
 
 .projects {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -335,6 +335,90 @@ body {
     width: 100%;
     color:#66c3ac;
     transition: 0.3s ease-out;
+}
+
+/* Contact Me */
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-me::after, .contact-me::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, #7DB1CA, #56A498, #50838E, #437661, #425E50);
+    z-index: -1;
+    padding: 5px;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+
+/*  other colour codes
+    #FDF2C5, #EDB286, #CC9486, #9C879B, #6D75A3 
+    #FEFFFA, #E6E67A, #B0B646, #697538, #50521E */
+
+.contact-me::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.contact-me h1 {
+    padding-bottom: 2%;
+}
+
+.contact-card {
+    background-color: #eff9fe;
+    width: 30%;
+    padding: 2%;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-list a{
+    text-decoration: none;
+    color: #243c41;
+}
+
+.contact-list a:hover {
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
+#contact-logo {
+    width: 40px;
+    height: 40px;
 }
 
 /* Footer */
