@@ -109,17 +109,19 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 8% 10% 0 10%;
+    padding: 5% 10% 0 10%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 60px;
 }
 .project h1{
-    padding-top: 2.5%;
+    padding-bottom: 6.3%;
 }
 
-.project-info{
+.project-info {
     padding-top: 2%;
+    color: #10171994;
     font-size: 25px;
+    font-style: italic;
 }
 
 /* Project Info 1 */
@@ -255,31 +257,22 @@ body {
     transform-style: preserve-3d;
 }
 
-#gif1-front {
-    background-image: url('assets/Throw_Computer.gif');
-    background-position: -300px center;
+.crop-container {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#gif2-front {
-    background-image: url('assets/Throw_Computer.gif');
-    background-size: 300%;
-    background-position: center;
-    border-radius: 8px;
-}
-
-#gif3-front {
-    background-image: url('assets/Throw_Computer.gif');
-    background-size: 350%;
-    background-position: -270px center;
-    border-radius: 8px;
-}
-
-#gif4-front {
-    background-image: url('assets/Throw_Computer.gif');
-    background-size: 350%;
-    background-position: -270px center;
-    border-radius: 8px;
+.crop-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
 }
 
 .flip-container:hover .flipper {
@@ -370,7 +363,7 @@ body {
     width: 100%;
     text-align: center;
     color:rgb(85, 85, 85);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     font-size: 18px;
     padding-bottom: 3%;
