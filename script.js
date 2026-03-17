@@ -23,7 +23,7 @@ function isInView1 (element) {
 }
 
 // Carousel
-const myWorksSlide = document.querySelector('.aboutme-slide');
+const myWorksSlide = document.querySelector('.extras-slide');
 const myWorksImages = document.querySelectorAll('.slide');
 
 // Buttons

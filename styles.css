@@ -138,7 +138,7 @@ body {
     object-fit: cover;
     vertical-align: middle;
     background-color: #eff9fe;
-    border-radius: 5%;
+    border-radius: 10px ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -199,7 +199,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     object-fit: cover;
     background-color: #eff9fe;
-    border-radius: 5%;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -208,9 +208,9 @@ body {
     box-shadow: 0 10px 20px #101719;
 }
 
-/* About Me */
+/* Extras */
 
-.aboutme {
+.extras {
     width: 56%;
     padding-top: 5%;
     padding-bottom: 20%;
@@ -222,7 +222,7 @@ body {
     font-size: 25;
 }
 
-.aboutme h1 {
+.extras h1 {
     text-align: center;
 }
 
@@ -247,14 +247,14 @@ body {
     cursor: pointer;
 }
 
-.aboutme-slide {
+.extras-slide {
     padding-top: 3%;;
     display: flex;
     width: 100%;
     height: 500px;
 }
 
-.aboutme-slide img {
+.extras-slide img {
     min-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -312,7 +312,7 @@ body {
     padding: 2%;
     font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -364,8 +364,8 @@ body {
     height: 65%;
     background-image: conic-gradient(from var(--angle), transparent 70%, #7DB1CA, #56A498, #50838E, #437661, #425E50);
     z-index: -1;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 20px 8px 5px 8px;
+    border-radius: 10px;
     animation: 3s spin linear infinite;
 }
 
@@ -397,7 +397,7 @@ body {
     padding: 2%;
     font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .links {
@@ -419,6 +419,7 @@ body {
 #contact-logo {
     width: 40px;
     height: 40px;
+    border-radius: 10px;
 }
 
 /* Footer */
