@@ -113,6 +113,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 60px;
 }
+
 .project h1{
     padding-bottom: 6.3%;
 }
@@ -142,6 +143,10 @@ body {
 #project-photo-1 {
     width: 30%;
     border-radius: 50%;
+}
+
+.project-desc-1 h1 {
+    padding-bottom: 3%;
 }
 
 .project-desc-1 {
@@ -179,6 +184,10 @@ body {
 #project-photo-2 {
     width: 30%;
     border-radius: 50%;
+}
+
+.project-desc-2 h1 {
+    padding-bottom: 3%;
 }
 
 .project-desc-2 {
@@ -287,76 +296,23 @@ body {
     border-radius: 10px;
 }
 
-#gif1-back {
-    background-image: linear-gradient(#5b8789, #abcccf);
-    background-position:center;
+#gif1-back, #gif2-back, #gif3-back, #gif4-back {
+    background-image: linear-gradient(#284344, #416668);
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
-
     position: relative;
-    padding-left: 20px;
-    padding-top: 30px;
+    padding: 50; 
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#gif2-back {
-    background-image: linear-gradient(#5b8789, #abcccf);
-    background-position:center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-    position: relative;
-    padding-left: 20px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#gif3-back {
-    background-image: linear-gradient(#5b8789, #abcccf);
-    background-position:center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-    position: relative;
-    padding-left: 20px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#gif4-back {
-    background-image: linear-gradient(#5b8789, #abcccf);
-    background-position:center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-    position: relative;
-    padding-left: 20px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 .hover-text {
@@ -368,45 +324,6 @@ body {
     font-size: 18px;
     padding-bottom: 3%;
     text-align: center;
-}
-
-/* Project Info 3 */
-
-.info-3 {
-    padding: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25;
-}
-
-.info-3 {
-    padding-top: 10%;
-}
-
-#project-photo-3 {
-    width: 30%;
-    border-radius: 50%;
-}
-
-.project-desc-3 {
-    padding: 5%;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-    object-fit: cover;
-    vertical-align: middle;
-    background-color: #eff9fe;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-desc-3:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 20px #101719;
 }
 
 /* Footer */
