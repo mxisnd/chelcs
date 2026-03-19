@@ -326,6 +326,52 @@ body {
     text-align: center;
 }
 
+/* Credits */
+
+.info-3 {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25;
+}
+
+#project-photo-3 {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.project-desc-3 {
+    padding: 5%;
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+    background-color: #eff9fe;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-desc-3 a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0.5re
+}
+
+.project-desc-3 a:hover {
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
+.project-desc-3:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px #101719;
+}
+
 /* Footer */
 
 * {
