@@ -101,6 +101,19 @@ body {
     object-position: center;
 }
 
+/* Others */
+
+.others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10% 0 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
 /* Projects */
 
 .project {
@@ -166,47 +179,6 @@ body {
     box-shadow: 0 10px 20px #101719;
 }
 
-/* Project Info 2 */
-
-.info-2 {
-    padding-top: 9%;
-    padding-left: 3%;
-    padding-right: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25;
-}
-
-#project-photo-2 {
-    width: 30%;
-    border-radius: 50%;
-}
-
-.project-desc-2 h1 {
-    padding-bottom: 3%;
-}
-
-.project-desc-2 {
-    padding: 5%;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-    object-fit: cover;
-    vertical-align: middle;
-    background-color: #eff9fe;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-desc-2:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 20px #101719;
-}
-
 /* Gifs */
 
 .gifs {
@@ -249,70 +221,66 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .flip-container {
-    background-color: transparent;
-    width: 800px;
-    height: 450px;
     perspective: 1000px;
+    width: fit-content;
 }
 
 .flipper {
     position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0, 1);
+    width: 300px;
+    height: 400px;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
-}
-
-.crop-container {
-    width: 100%;
-    height: 450px; 
-    overflow: hidden;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.crop-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transform: none;
 }
 
 .flip-container:hover .flipper {
     transform: rotateY(180deg);
 }
 
-.column-back {
-    background-size: cover;
-    background-position: center;
-    transform: rotateY(180deg);
-    border: 1px solid #90adc9;
-    border-radius: 10px;
+.column {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
-#gif1-back, #gif2-back, #gif3-back, #gif4-back {
-    background-image: linear-gradient(#284344, #416668);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    position: relative;
-    padding: 50; 
+#gif1-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    text-align: center;
+#gif1-front img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#gif1-back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+#gif1-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .hover-text {
@@ -326,45 +294,21 @@ body {
     text-align: center;
 }
 
-/* Credits */
+/* Project 2 */
 
-.info-3 {
-    padding: 3%;
+.sketchfab-embed-wrapper {
+    padding: 5%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25;
 }
 
-.info-3 {
-    padding-top: 10%;
+.sketchfab-embed-wrapper iframe {
+    align-items: center;
+    justify-content: center;
+    width: 500px; 
+    height: 600px;
 }
-
-#project-photo-3 {
-    width: 30%;
-    border-radius: 50%;
-}
-
-.project-desc-3 {
-    padding: 5%;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-    object-fit: cover;
-    vertical-align: middle;
-    background-color: #eff9fe;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-desc-3:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 20px #101719;
-}
-
 
 /* Footer */
 
