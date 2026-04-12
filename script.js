@@ -125,3 +125,48 @@ function copyTextEmail(event) {
         }, 2000);
     });
 }
+
+// Copy Text (Discord ID) (Footer)
+function copyTextDisc2(event) {
+    event.preventDefault();
+    const link = document.getElementById("discordLink2");
+    const text = document.getElementById("textToCopyDisc2").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        link.innerText = "Copied!";
+        
+        setTimeout(() => {
+            link.innerText = "Discord";
+        }, 2000);
+    });
+}
+
+// Copy Text (Tele Handle) (Footer)
+function copyTextTele2(event) {
+    event.preventDefault();
+    const link = document.getElementById("teleLink2");
+    const text = document.getElementById("textToCopyTele2").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        link.innerText = "Copied!";
+        
+        setTimeout(() => {
+            link.innerText = "Telegram";
+        }, 2000);
+    });
+}
+
+// Copy Text (Email) (Footer)
+function copyTextEmail2(event) {
+    event.preventDefault();
+    const link = document.getElementById("emailLink2");
+    const text = document.getElementById("textToCopyEmail2").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        link.innerText = "Copied!";
+        
+        setTimeout(() => {
+            link.innerText = "Email";
+        }, 2000);
+    });
+}
