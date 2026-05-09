@@ -131,12 +131,12 @@ body {
 }
 
 .project h1{
-    color: #c7f8f2;
+    color: #ffffff;
 }
 
 #project-subtext {
     font-size: 25px;
-    color: #ccd1d1;
+    color: #c7f8f2;
 }
 
 .project-video {
@@ -151,7 +151,7 @@ body {
 .project-info {
     text-align: center;
     padding-top: 2%;
-    color: #10171994;
+    color: #eff9feaf;
     font-size: 25px;
     font-style: italic;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -201,6 +201,14 @@ body {
 }
 
 /* Gifs */
+
+#clips {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    padding: 60px 20px;
+}
 
 .gifs {
     display: flex;
@@ -384,7 +392,7 @@ body {
 }
 
 .footer-heading a:hover {
-    color:rgb(174, 174, 174);
+    color:#66c3ac;
     transition: 0.3s ease-out;
 }
 
