@@ -427,6 +427,14 @@ body {
     background-image: url(./assets/TooCube_Gif.gif);
 }
 
+.balloonjoyride-bg{
+    background-image: url(./assets/BalloonJoyride.png);
+}
+
+.project-card:hover .balloonjoyride-bg{
+    background-image: url(./assets/BalloonJoyride_Gif.gif);
+}
+
 .others-bg{
     background-image: url(./assets/Others_Img.png);
 }
@@ -469,6 +477,11 @@ body {
 .project-type.unity{
     background-color: rgb(196, 196, 196);
     color: rgb(65, 65, 65);
+}
+
+.project-type.unreal{
+    background-color: rgb(108, 108, 108);
+    color: rgb(30, 30, 30);
 }
 
 .project-type.art{

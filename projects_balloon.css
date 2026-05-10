@@ -1,0 +1,441 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    size: 0.1%;
+    box-sizing: border-box;
+    background-color: #686e6e;
+    background-image: linear-gradient(#151d1d, #385050);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #243c41ee 0%, #243c4100 100%);
+}
+
+.inner_header {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo_container h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a:hover {
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
+.navigation li {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Gif Header */
+
+.gif-top{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Projects */
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10% 0 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.project h1{
+    padding-bottom: 6.3%;
+    color: #ffffff;
+}
+
+.project-info {
+    padding-top: 2%;
+    color: #eff9feaf;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Project Info 1 */
+
+.info-1 {
+    padding-top: 9%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25;
+}
+
+#project-photo-1 {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.project-desc-1 h1 {
+    padding-bottom: 3%;
+}
+
+.project-desc-1 {
+    padding: 5%;
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    vertical-align: middle;
+    background-color: #eff9fe;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-desc-1:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px #101719;
+}
+
+/* Project Info 2 */
+
+.info-2 {
+    padding-top: 9%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25;
+}
+
+#project-photo-2 {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.project-desc-2 h1 {
+    padding-bottom: 3%;
+}
+
+.project-desc-2 {
+    padding: 5%;
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    vertical-align: middle;
+    background-color: #eff9fe;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-desc-2:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px #101719;
+}
+
+/* Gifs */
+
+#clips {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    padding: 60px 20px;
+}
+
+
+.gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.gifs h3 {
+    color: #c7f8f2;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.column {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-container {
+    background-color: transparent;
+    width: 550px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0, 1);
+    transform-style: preserve-3d;
+}
+
+.crop-container {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crop-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.column-back {
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+    border: 1px solid #90adc9;
+    border-radius: 10px;
+}
+
+#gif1-back, #gif2-back, #gif3-back, #gif4-back {
+    background-image: linear-gradient(#284344, #416668);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    padding: 50; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hover-text {
+    width: 100%;
+    text-align: center;
+    color:rgb(227, 248, 250);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+/* Credits */
+
+.info-3 {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25;
+}
+
+#project-photo-3 {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.project-desc-3 {
+    padding: 5%;
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+    background-color: #eff9fe;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-desc-3 a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0.5re
+}
+
+.project-desc-3 a:hover {
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
+.project-desc-3:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px #101719;
+}
+
+/* Footer */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    background-color: #243c41df;
+    padding: 2rem 5% 20rem 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 80%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-1 {
+    float: left;
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+.footer-2 {
+    float: right;
+    padding-top: 3%;
+    padding-right: 10%;
+}
+
+.footer-heading a:hover {
+    color: #66c3ac;
+    transition: 0.3s ease-out;
+}
+
+.footer-2 p{
+    display: none;
+}
