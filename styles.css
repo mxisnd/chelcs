@@ -409,7 +409,7 @@ body {
 }
 
 .project-card:hover .elementra-bg{
-    background-image: url(./assets/Elementra_Gif.gif);
+    background-image: url(./assets/Elementra_PrevGif.gif);
 }
 
 .ratsandroombas-bg{
@@ -417,7 +417,7 @@ body {
 }
 
 .project-card:hover .ratsandroombas-bg{
-    background-image: url(./assets/RatsAndRoombas_Gif.gif);
+    background-image: url(./assets/RatsAndRoombas_Gif1.gif);
 }
 
 .toocube-bg{
