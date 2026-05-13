@@ -126,6 +126,7 @@ body {
 #profile-photo {
     width: 15%;
     border-radius: 50%;
+    transform: scaleX(-1);
 }
 
 .box-info {
