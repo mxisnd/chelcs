@@ -403,6 +403,27 @@ body {
     transition: background-image 0.3s ease;
 }
 
+.gamefile_dl_link{
+    background-color: #eff9fe;
+    width: 500px;
+    padding: 2%;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gamefile_dl_link a{
+    color: #101719;
+    text-decoration: none;
+}
+
+.gamefile_dl_link a:hover{
+    width: 100%;
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
 .elementra-bg{
     background-image: url(./assets/Elementra.png);
 }
