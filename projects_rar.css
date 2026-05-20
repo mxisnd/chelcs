@@ -90,6 +90,21 @@ body {
     text-decoration: none;
 }
 
+@font-face{
+    font-family: 'Minecraft';
+    src: url('assets/Minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#web_header{
+    font-family: 'Minecraft', sans-serif;
+}
+
+#web_img_header{
+    padding-right: 50%;
+}
+
 /* Gif Header */
 
 .gif-top{
