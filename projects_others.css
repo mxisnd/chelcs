@@ -340,9 +340,13 @@ body {
 /* Project 2 */
 
 .sketchfab-embed-wrapper {
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -351,6 +355,10 @@ body {
     justify-content: center;
     width: 500px; 
     height: 600px;
+}
+
+.model-1 .model-2 .model-3 {
+    padding-left: 5%;
 }
 
 /* Footer */
