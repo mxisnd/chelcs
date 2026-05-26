@@ -111,21 +111,6 @@ function copyTextTele(event) {
     });
 }
 
-// Copy Text (Email)
-function copyTextEmail(event) {
-    event.preventDefault();
-    const link = document.getElementById("emailLink");
-    const text = document.getElementById("textToCopyEmail").innerText;
-
-    navigator.clipboard.writeText(text).then(() => {
-        link.innerText = "Copied!";
-        
-        setTimeout(() => {
-            link.innerText = "Email";
-        }, 2000);
-    });
-}
-
 // Copy Text (Discord ID) (Footer)
 function copyTextDisc2(event) {
     event.preventDefault();
@@ -152,21 +137,6 @@ function copyTextTele2(event) {
         
         setTimeout(() => {
             link.innerText = "Telegram";
-        }, 2000);
-    });
-}
-
-// Copy Text (Email) (Footer)
-function copyTextEmail2(event) {
-    event.preventDefault();
-    const link = document.getElementById("emailLink2");
-    const text = document.getElementById("textToCopyEmail2").innerText;
-
-    navigator.clipboard.writeText(text).then(() => {
-        link.innerText = "Copied!";
-        
-        setTimeout(() => {
-            link.innerText = "Email";
         }, 2000);
     });
 }
