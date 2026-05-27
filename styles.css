@@ -584,7 +584,7 @@ body {
     height: 65%;
     background-image: conic-gradient(from var(--angle), transparent 70%, #a6dbf3, #9af7e9, #84d0e0, #7ad4af, #a1c4b2);
     z-index: -1;
-    padding: 20px 8px 5px 8px;
+    padding: 20px 10px 15px 8px;
     border-radius: 10px;
     animation: 3s spin linear infinite;
 }

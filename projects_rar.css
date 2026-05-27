@@ -194,6 +194,17 @@ body {
     border-radius: 10px;
 }
 
+.dl-link{
+    color: #101719;
+    text-decoration: none;
+}
+
+.about-project-1 a:hover{
+    width: 100%;
+    color:#66c3ac;
+    transition: 0.3s ease-out;
+}
+
 /* Project Info 1 */
 
 .info-1 {
