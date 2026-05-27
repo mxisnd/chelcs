@@ -96,21 +96,6 @@ function copyTextDisc(event) {
     });
 }
 
-// Copy Text (Tele Handle)
-function copyTextTele(event) {
-    event.preventDefault();
-    const link = document.getElementById("teleLink");
-    const text = document.getElementById("textToCopyTele").innerText;
-
-    navigator.clipboard.writeText(text).then(() => {
-        link.innerText = "Copied!";
-        
-        setTimeout(() => {
-            link.innerText = "Telegram";
-        }, 2000);
-    });
-}
-
 // Copy Text (Discord ID) (Footer)
 function copyTextDisc2(event) {
     event.preventDefault();
@@ -122,21 +107,6 @@ function copyTextDisc2(event) {
         
         setTimeout(() => {
             link.innerText = "Discord";
-        }, 2000);
-    });
-}
-
-// Copy Text (Tele Handle) (Footer)
-function copyTextTele2(event) {
-    event.preventDefault();
-    const link = document.getElementById("teleLink2");
-    const text = document.getElementById("textToCopyTele2").innerText;
-
-    navigator.clipboard.writeText(text).then(() => {
-        link.innerText = "Copied!";
-        
-        setTimeout(() => {
-            link.innerText = "Telegram";
         }, 2000);
     });
 }
