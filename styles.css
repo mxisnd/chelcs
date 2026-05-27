@@ -107,9 +107,15 @@ body {
 
 /* Gif Header */
 
-.gif-top{
+.gif-header{
     width: 100%;
-    height: 60%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.gif-top {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -117,7 +123,7 @@ body {
 /* Profile */
 
 .profile {
-    padding-top: 1%;
+    padding-top: 2.5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -452,7 +458,7 @@ body {
 }
 
 .project-card:hover .ratsandroombas-bg{
-    background-image: url(./assets/RatsAndRoombas_Gif1.gif);
+    background-image: url(./assets/RatsAndRoombas_GifIndex.gif);
 }
 
 .toocube-bg{
@@ -477,6 +483,14 @@ body {
 
 .project-card:hover .iwtgh-bg{
     background-image: url(./assets/Iwtgh_Gif1.gif);
+}
+
+.santasim-bg{
+    background-image: url(./assets/SantaSim.png);
+}
+
+.project-card:hover .santasim-bg{
+    background-image: url(./assets/SantaSim_Gif.gif)
 }
 
 .others-bg{

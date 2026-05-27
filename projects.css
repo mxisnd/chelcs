@@ -240,6 +240,7 @@ body {
     padding-top: 9%;
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 9%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
