@@ -522,6 +522,11 @@ body {
     color: rgb(2, 0, 128);
 }
 
+.project-type.mobile{
+    background-color: rgb(255, 246, 120);
+    color: rgb(148, 122, 8);
+}
+
 .project-type.art{
     background-color: rgb(255, 78, 240);
     color: rgb(126, 13, 92);
