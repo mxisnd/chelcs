@@ -164,7 +164,31 @@ body {
     color: #ffffff;
 }
 
+.project-1 {
+    color: #c7f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10% 5% 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.project h1{
+    padding-bottom: 6.3%;
+    color: #ffffff;
+}
+
 .project-info {
+    padding-top: 2%;
+    color: #eff9feaf;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.project-info-1 {
     padding-top: 2%;
     color: #eff9feaf;
     font-size: 25px;
@@ -191,6 +215,7 @@ body {
     vertical-align: middle;
     background-color: #eff9fe;
     border-radius: 10px;
+    color: black;
 }
 
 .dl-link{

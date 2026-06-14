@@ -485,6 +485,14 @@ body {
     background-image: url(./assets/Iwtgh_Gif1.gif);
 }
 
+.ttwtio-bg{
+    background-image: url(./assets/TTWTIO.png);
+}
+
+.project-card:hover .ttwtio-bg{
+    background-image: url(./assets/TTWTIO_Gif.gif);
+}
+
 .santasim-bg{
     background-image: url(./assets/SantaSim.png);
 }
